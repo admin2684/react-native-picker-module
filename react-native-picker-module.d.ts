@@ -10,7 +10,7 @@ export interface ReactNativePickerModuleProps {
   items: string[]
   title?: string
   pickerRef: React.RefObject<ReactNativePickerModule>
-  onValueChange: (value: string) => void
+  onValueChange: (value: string, index: number) => void
   onCancel?: () => void
   cancelButton?: string
   confirmButton?: string
